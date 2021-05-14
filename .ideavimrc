@@ -1,0 +1,32 @@
+" Selected Intellimacs modules
+source ~/.intellimacs/spacemacs.vim
+source ~/.intellimacs/extra.vim
+source ~/.intellimacs/major.vim
+source ~/.intellimacs/hybrid.vim
+
+" My own vim commands
+nnoremap Y y$
+set number
+set relativenumber
+set history=10000
+set keep-english-in-normal
+set scrolloff=3
+set NERDTree
+
+" zm zr
+nnoremap zc    :action CollapseRegion<CR>
+vnoremap zc    :action CollapseRegion<CR>
+
+nnoremap ze    :action ExpandRegion<CR>
+vnoremap ze    :action ExpandRegion<CR>
+
+" Comma for major mode
+nmap , <leader>m
+vmap , <leader>m
+
+" Add/edit actions
+nnoremap <leader>gl    :action Vcs.Show.Log<CR>
+vnoremap <leader>gl    :action Vcs.Show.Log<CR>
+
+nnoremap <leader>tt    :action $EditorTranslateAction<CR>
+vnoremap <leader>tt    :action $EditorTranslateAction<CR>
