@@ -1,8 +1,12 @@
-" Selected Intellimacs modules
 source ~/.intellimacs/spacemacs.vim
+
+" Enable other Intellimacs modules
 source ~/.intellimacs/extra.vim
 source ~/.intellimacs/major.vim
 source ~/.intellimacs/hybrid.vim
+
+" Enable which-key plugin
+" source ~/.intellimacs/which-key.vim
 
 " My own vim commands
 nnoremap Y y$
@@ -12,11 +16,12 @@ set history=10000
 set keep-english-in-normal
 set scrolloff=3
 set NERDTree
+" set sneak
 
-" zm zr
+" zm
 nnoremap zc    :action CollapseRegion<CR>
 vnoremap zc    :action CollapseRegion<CR>
-
+" zr
 nnoremap ze    :action ExpandRegion<CR>
 vnoremap ze    :action ExpandRegion<CR>
 
@@ -30,3 +35,4 @@ vnoremap <leader>gl    :action Vcs.Show.Log<CR>
 
 nnoremap <leader>tt    :action $EditorTranslateAction<CR>
 vnoremap <leader>tt    :action $EditorTranslateAction<CR>
+
