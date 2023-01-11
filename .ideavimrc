@@ -16,7 +16,7 @@ set history=10000
 set keep-english-in-normal
 set scrolloff=3
 set NERDTree
-" set sneak
+set sneak
 
 " zm
 nnoremap zc    :action CollapseRegion<CR>
