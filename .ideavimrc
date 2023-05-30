@@ -36,3 +36,7 @@ vnoremap <leader>gl    :action Vcs.Show.Log<CR>
 nnoremap <leader>tt    :action $EditorTranslateAction<CR>
 vnoremap <leader>tt    :action $EditorTranslateAction<CR>
 
+" comment
+nnoremap <D-/>    :action CommentByLineComment<CR>
+vnoremap <D-/>    :action CommentByLineComment<CR>
+
